@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-black h-full">
+        <div class="ansatte p-4">
+            <h1 class="text-yellow-200 text-center">Ansatte</h1>
+        <div class="wrapper flex flex-wrap justify-center p-4 m-2">
+            <div class="employeewrapper p-4   object-cover">
+                <div class="employee francois h-96">
+                    <img class="h-96" src="/img/Omega-254.jpg" alt="">
+                    <img class="h-96" src="/img/Omega-263.jpg" alt="">
+                </div>
+                <h2 class="text-yellow-200 text-center p-4">Francois</h2>
+            </div>
+            <div class="employeewrapper p-4 object-cover">
+                <div class="employee adrian h-96">
+                    <img class="h-96" src="/img/Omega-29.jpg" alt="">
+                    <img class="h-96" src="/img/Omega-35.jpg" alt="">
+                </div>
+                <h2 class="text-yellow-200 text-center p-4">Adrian</h2>
+            </div>
+            <div class="employeewrapper p-4 object-cover">
+                <div class="employee ola h-96">
+                    <img class="h-96" src="/img/Omega-107.jpg" alt="">
+                    <img class="h-96" src="/img/Omega-109.jpg" alt="">
+                </div>
+                <h2 class="text-yellow-200 text-center p-4">Ola</h2>
+            </div>
+            <div class="employeewrapper p-4 object-cover">
+                <div class="employee ola h-96">
+                    <img class="h-96" src="/img/Omega-168.jpg" alt="">
+                    <img class="h-96" src="/img/Omega-177.jpg" alt="">
+                </div>
+                <h2 class="text-yellow-200 text-center p-4">Svein</h2>
+            </div>
+            <div class="employeewrapper p-4 object-cover">
+                <div class="employee elin">
+                    <img class="h-96 w-64" src="/img/Omega-410.jpg" alt="">
+                    <img class="h-96 w-64" src="/img/elin.png" alt="">
+                </div>
+                <h2 class="text-yellow-200 text-center p-4">Elin</h2>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</body>
+<style>
+.employee img:first-child {
+    filter: grayscale(100%);
+}
+.employee img:last-child {
+  display: none;
+}
+.employee:hover img:last-child {
+  display: block;  
+}
+.employee:hover img:first-child {
+  display: none;  
+}
+</style>
+</html>
